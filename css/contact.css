@@ -1,0 +1,111 @@
+/* START SECTION */
+section.contact {
+    padding: 50px 50px 10px;
+    min-height: 100vh;
+    background-color: var(--bg-background);
+}
+
+section.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+@media(max-width: 980px) {
+    section.contact .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+section.contact .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+@media(max-width: 600px) {
+    section.contact .info {
+        grid-template-columns: 1fr;
+    }
+}
+
+section.contact .info .card {
+    padding: 15px;
+    box-shadow: 1px 2px 2px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section.contact .info .card h3.card_title {
+    font-weight: bold;
+}
+
+section.contact .info .card span{
+    display: block;
+    margin-block: 10px;
+}
+
+section.contact form {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+section.contact form div:nth-child(1),
+section.contact form div:nth-child(2) {
+    display: flex;
+    margin-block: 20px;
+}
+
+section.contact form .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.contact form .inputs div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+
+section.contact .container form .inputs div label {
+    margin-bottom: 15px;
+}
+
+section.contact .container form .inputs div select,
+section.contact .container form .inputs div input {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 10px;
+}
+
+section.contact .container form div textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+section.contact form button {
+    background-color: var(--btn-color);
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 15px;
+    border: 1px solid var(--btn-color);
+    width: 100%;
+}
+
+section.contact form button:hover {
+    background-color: transparent;
+    color: var(--btn-color);
+}
+
+/* END SECTION */

@@ -132,3 +132,74 @@ nav button {
 }
 
 /* START NAVBAR */
+
+
+
+
+/* START FOOTER */
+footer.footer {
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+}
+
+footer.footer .top-footer .header .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer.footer .top-footer .header .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer.footer .top-footer .header p {
+    margin-block: 20px;
+}
+
+footer.footer .top-footer .header .icons {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+footer.footer .top-footer .header .icons i {
+    border: 1px solid white;
+}
+
+footer.footer .top-footer .header .icons i:not(:nth-child(1)) {
+    margin-inline: 10px;
+}
+
+footer.footer .top-footer ul {
+    margin-block: 20px;
+}
+
+footer.footer .top-footer ul li.heade-list {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer.footer .top-footer ul li:not(.heade-list) {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+footer.footer .bootom-footer>p:first-child {
+    margin-bottom: 10px;
+}
+
+footer.footer .bootom-footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width: 800px) {
+    footer.footer .top-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+}
+
+/* END FOOTER */
